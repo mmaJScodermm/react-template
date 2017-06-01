@@ -1,7 +1,11 @@
-# react-simple-o2o-demo
+window package.json
 
-首页，文档参见[这里](./docs/README.md)
+set：
 
-mac 下 NODE_ENV=dev
-
-window 下 set NODE_ENV=dev &&               互相替换
+"scripts": {
+    "start": "set NODE_ENV=dev && webpack-dev-server --progress --colors",
+    "mock": "node --harmony ./mock/server.js",
+    "build": "rd/s/q build && set NODE_ENV=production && webpack --config ./webpack.production.config.js --progress --colors"
+  }
+  
+  运行报错 手动新建build文件夹
