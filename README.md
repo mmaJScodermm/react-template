@@ -1,2 +1,1 @@
-# react-template
-
+create-react-app -template && some options
